@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href= "css/style.css">
+</head>
+<body>
+    <nav>
+        <u1 class="sidebar">
+          <li onclick=hideSidebar()><a href="index.html"></a><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 24 24" width="48px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="article.html">Article</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </u1>  
+        <u1>
+          <li class="hideOnMobile"><a href="index.html">Echo Chronicle</a></li>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="'hideOnMobile"><a href="article.html">Article</a></li>
+          <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+          <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="26" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a><li>
+        </u1>  
+      </nav>
+    
+
+    <header class="article-header">
+        <h1>Comsic Voyages: Exploring the Interstellar Frontier</h1>
+
+        <p> By: Dr. Cassandra Starlight | Feb 24 2024</p>
+        <p> Dr. Cassandra starlight leads a pioneering expedition into the cosmic unknown
+            probing distant galaxies and celestial phenomena. Armed with cutting-edge technology,
+            her team charts uncharted territories, seeking answers to age-old questions about
+            the universe's origins and mysteries. Their cosmic voyages inspire a new generation of explores and embody the 
+            relentless pursuit of understanding our place in the cosmos. </p>
+        <img src="images/cosmic1.jpg" alt="Description of Image 1" width="500">
+        <img src="images/cosmic2.jpg" alt="Description of Image 2" width="500">
+   
+    </header>
+    <h2>Quantum Leaps: Navigating the Uncertainty Principle </h2>
+
+    <p> By: Professor Wavefunction | Feb 24 2024 </p>   
+
+        <p> The Uncertaintiy Principle, a cornerstoner of quantum mechanics,challenges our ability to precisely measure
+            both the position and momemtum of particles simultaneously. Conined by Werner Heisenberg in 1927, it underscores
+            the fundamental unpredictability of the quantum world. </p>
+
+
+<img src="images/leaping.jpg" alt="Description of Image 1" width="500">
+    <img src="images/leap2.jpg" alt="Description of Image 1" width="500">
+
+    
+</body>
+
+
+<aside class="sidebar">
+    <section class="advertisement">
+        <h3>Adopt Kittens</h3> 
+        <p>Find your perfect kitten companion today.</p>
+    </section>
+</aside>
+
+<script>
+    function showSidebar(){
+     const sidebar = document.querySelector('.sidebar');
+     sidebar.style.display = 'flex';
+    }
+    function hideSidebar(){
+     const sidebar = document.querySelector('.sidebar');
+     sidebar.style.display = 'none';
+    }
+   </script>
+
+</html>
